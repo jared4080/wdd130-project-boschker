@@ -1,0 +1,28 @@
+nav {
+    background-color: #21242c;
+    color: #faf9f6;
+    padding: 20px;
+}
+
+a:link {
+  color: #fae875; 
+  text-decoration: underline; 
+}
+
+a:visited {
+  color: pink; 
+}
+
+a:hover {
+  color: #e7645d; 
+  text-decoration: none; 
+}
+
+a:active {
+  color: #fff0a6; 
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
