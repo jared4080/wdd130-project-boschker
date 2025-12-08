@@ -2,12 +2,16 @@ nav {
     background-color:#21242c; 
     color: #faf9f6;
     padding: 20px;
+    display: flex;
+    align-items: center;  
+    height: 70px;
     font-size: 30pt;
+    gap: 10px;
 }
 
 a:link {
-  color: #faf9f6;
-  text-decoration: underline; 
+  color: #fae875; 
+  text-decoration: none; 
 }
 
 a:visited {
@@ -15,8 +19,8 @@ a:visited {
 }
 
 a:hover {
-  color: #fff0a6; 
-  text-decoration: none;
+  color: #e7645d; 
+  text-decoration: underline; 
 }
 
 a:active {
