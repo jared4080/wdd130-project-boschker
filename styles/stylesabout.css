@@ -1,5 +1,5 @@
 body {
-    background-color: #e7645d;
+    background-color: #faf9f6;
     font-family: 'Noto Sans', sans-serif;
 }
 nav img {
@@ -34,7 +34,7 @@ li:nth-child(3) {
 }
 h1 {
     text-align: center;
-    color: #faf9f6;
+    color: #21242c;
     font-weight: bold;
     text-decoration: underline;
 }
@@ -43,7 +43,7 @@ p {
     text-align: center;
     margin-top: 80px;
     margin-bottom: 80px;   
-    color: #faf9f6;
+    color: #21242c;
     margin-left: auto;
     margin-right: auto;
 }
