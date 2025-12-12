@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: "Noto Sans", Arial, Helvetica, sans-serif;
+    background-color: #faf9f6;
+    color: black;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/* Header and Nav */
+
+header {
+    background: #21242c;
+    color: #000;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+}
+
+.logo{
+    width: 100px;
+    height: auto;
+    max-width: 100%;
+}
+
+nav {
+    background-color:#21242c; 
+    color: #faf9f6;
+    padding: 20px;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    height: 70px;
+    font-size: 2rem;
+    gap: 20px;
+
+}
+
+nav a {
+    color: #faf9f6;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #fff0a6;
+
+}
+
+.logo-container {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+
+.logo {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.logo-container::before,
+.logo-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 4px;
+    height: 100%;
+    background-color: red;
+    transform: translateX(-50%);
+}
+
+.logo-container::before {
+    transform: translateX(-50%) rotate(45deg);
+}
+
+.logo-container::after {
+    transform: translateX(-50%) rotate(-45deg);
+}
+
+/* Main */
+
+main{
+    text-align: center;
+    background-color: #faf9f6;
+}
+
+.hero {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #faf9f6;
+    border-radius: 8px;
+}
+
+h1{
+    font-size: 50px;
+    color: #21242c;
+}
+
+.container {
+    width: 90%;
+    max-width: 1500px;
+    margin: 20px auto;
+    /* background-color: #181818; */
+    padding: 0px;
+    display: grid;
+    gap: 20px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: stretch;
+}
+
+.row.bad img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+.row.bad .text {
+    padding: 20px;
+    background-color: #e7645d;
+    color: #faf9f6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.row.good img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+.row.good .text {
+    padding: 20px;
+    background-color: #fae875;
+    color: #faf9f6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.row h4 {
+    margin-bottom: 10px;
+}
+
+.row p {
+    line-height: 1.5;
+}
+
