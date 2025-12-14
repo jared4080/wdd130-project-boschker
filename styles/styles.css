@@ -52,6 +52,18 @@ nav a:hover{
 
 }
 
+a:link {
+  color: #ffe852; 
+  text-decoration: none; 
+}
+
+a:visited {
+  color: rgb(255, 133, 153); 
+}
+
+a:hover {
+  color: #fff0a6  ; 
+  text-decoration: underline; 
 .logo-container {
     position: relative;
     width: 100px;
@@ -81,6 +93,95 @@ nav a:hover{
     transform: translateX(-50%) rotate(45deg);
 }
 
+.logo {
+  width: 75px;
+  height: 75px;
+}
+
+
+
+.aboutbutton {
+  background-color: #fff0a6;
+  width: 60%;
+  height: 100px;
+  margin: auto;
+  box-shadow:-5px 5px #f1d100;
+  text-align: center;
+  padding: 10px;
+  line-height: 100px;
+}
+
+.info {
+  background-color: #faf9f6;
+  grid-column: 1/1;
+  text-align: center;
+  margin: auto;
+  padding: 20px;
+  width: 60%;
+  height: 450px;
+  background-color: #c5c5c3;
+  border: #21242c solid 10px;
+  border-radius: 15px;
+}
+
+.home1 {
+  background-color: #faf9f6;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  border-bottom: #21242c solid 5px;
+  height: 650px;
+}
+
+.aboutbutton:hover {
+  background-color: #e7645d;
+  box-shadow:-5px 5px #a9342d;
+}
+
+.home2 {
+  background-color: #faf9f6;
+  text-align: center;
+  margin: auto;
+  margin-top: 50px;
+  padding: 20px;
+  width: 60%;
+  height: 65%;
+  background-color: #c5c5c3;
+  border: #21242c solid 10px;
+  border-radius: 15px;
+}
+
+footer {
+  margin-top: 50px;
+  width: 100%;
+}
+
+.strikethrough-text {
+  text-decoration: line-through;
+}
+
+h1 {
+    text-align: center;
+    color: #21242c;
+    font-weight: bold;
+    text-decoration: underline;
+}
+p {
+    width: 40%;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 80px;   
+    color: #21242c;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#topp {
+    margin-top: 80px;
+}
+
+header {
+  text-align: center;
+  font-size: 50pt;
 .logo-container::after {
     transform: translateX(-50%) rotate(-45deg);
 }
