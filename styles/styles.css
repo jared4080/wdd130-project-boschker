@@ -1,8 +1,32 @@
-body {
-  font-size: 25pt;
-  font-family: 'Noto Sans', sans-serif;
-  background-color: #faf9f6;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Noto Sans", Arial, Helvetica, sans-serif;
+    background-color: #faf9f6;
+    color: black;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+header {
+    background: #21242c;
+    color: #000;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+}
+
+.logo{
+    width: 100px;
+    height: auto;
+    max-width: 100%;
 }
 
 nav {
@@ -10,10 +34,22 @@ nav {
     color: #faf9f6;
     padding: 20px;
     display: flex;
-    align-items: center;  
+    align-items: center; 
+    justify-content: center; 
     height: 70px;
-    font-size: 30pt;
-    gap: 10px;
+    font-size: 2rem;
+    gap: 20px;
+
+}
+
+nav a {
+    color: #faf9f6;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #fff0a6;
+
 }
 
 a:link {
@@ -28,10 +64,33 @@ a:visited {
 a:hover {
   color: #fff0a6  ; 
   text-decoration: underline; 
+.logo-container {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
 }
 
-a:active {
-  color: #e7645d ;
+.logo {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.logo-container::before,
+.logo-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 4px;
+    height: 100%;
+    background-color: red;
+    transform: translateX(-50%);
+}
+
+.logo-container::before {
+    transform: translateX(-50%) rotate(45deg);
 }
 
 .logo {
@@ -123,4 +182,6 @@ p {
 header {
   text-align: center;
   font-size: 50pt;
+.logo-container::after {
+    transform: translateX(-50%) rotate(-45deg);
 }
